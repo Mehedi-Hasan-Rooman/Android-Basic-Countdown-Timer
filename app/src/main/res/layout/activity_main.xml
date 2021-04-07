@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+   <EditText
+       android:textColor="#FFF"
+       android:layout_marginBottom="20dp"
+       android:id="@+id/edit_text"
+       android:layout_above="@+id/timer"
+       android:textColorHint="#88ED0505"
+       android:maxLength="4"
+       android:inputType="number"
+       android:hint="MINUTES"
+       android:layout_width="200dp"
+       android:layout_height="wrap_content"/>
+   <Button
+       android:layout_marginLeft="50dp"
+       android:layout_above="@+id/edit_text"
+       android:id="@+id/button_set"
+       android:text="SET"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+
+   <TextView
+       android:textColor="#fff"
+       android:id="@+id/timer"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="00.00"
+       android:textSize="69sp" />
+
+   <Button
+       android:gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       android:layout_below="@+id/timer"
+       android:text="Start"
+       android:id="@+id/start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+   <Button
+       android:gravity="center_horizontal"
+       android:layout_marginTop="10dp"
+       android:layout_below="@+id/timer"
+       android:layout_toRightOf="@+id/start"
+       android:text="Reset"
+       android:id="@+id/reset"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="invisible"
+       tools:visibility="visible" />
+
+
+
+</RelativeLayout>
